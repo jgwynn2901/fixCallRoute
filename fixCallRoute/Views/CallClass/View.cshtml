@@ -1,0 +1,60 @@
+﻿@model fixCallRoute.Models.CallClass
+
+<div>
+    <h4>CallClass</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CallId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CallId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Status)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Status)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UserId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UserId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AhsId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AhsId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ClaimNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ClaimNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PolicyNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PolicyNumber)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

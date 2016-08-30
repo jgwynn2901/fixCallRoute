@@ -1,0 +1,37 @@
+﻿@model IEnumerable<fixCallRoute.Models.CallClass>
+<div class="jumbotron">
+    <h2>ClaimCapture</h2>
+    <p class="lead">Fix aborted calls that are not appearing on monitors.</p>
+
+</div>
+
+<div class="row">
+    <table st-table="rowCollection" class="table table-striped">
+        <thead>
+            <tr>
+                <th>CallId</th>
+                <th>Status</th>
+                <th>ClaimNumber</th>
+                <th>PolicyNumber</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.CallId</td>
+                    <td>@item.Status</td>
+                    <td>@item.ClaimNumber</td>
+                    <td>@item.PolicyNumber</td>
+                </tr>
+
+            }
+        </tbody>
+    </table>
+    <form method="post" action="~/Home/Fix">
+        <button type="submit" class="btn btn-sm btn-success">
+            <i class="fa fa-plus">
+            </i>&nbsp;Fix All
+        </button>
+    </form>
+</div>
